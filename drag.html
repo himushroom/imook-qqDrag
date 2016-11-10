@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>面板拖拽</title>
+	<link rel="stylesheet" href="drag.css">
+</head>
+<body>
+	<p id="client"></p>
+	<div id="con">
+		<header id="drag">
+			<h3>登录</h3>
+		</header>
+		<div class="main">
+			<label for="number">账号:
+				<input type="number" id="number" placeholder="QQ号码" />
+			</label>
+			<label for="psw">密码:
+				<input type="number" id="psw" placeholder="输入密码" />
+			</label>
+		</div>
+		<footer>
+			<button>登录</button>
+			<div id="state">
+				<span class="down"></span>
+				<span class="on">在线</span>
+			</div>
+			<ul id="state_list">
+				<li><span class="down"></span><span class="state">在线</span></li>
+				<li><span class="down"></span><span class="state">离线</span></li>
+				<li><span class="down"></span><span class="state">离开</span></li>
+				<li><span class="down"></span><span class="state">忙碌</span></li>
+				<li><span class="down"></span><span class="state">隐身</span></li>
+			</ul>
+		</footer>
+	</div>
+	<script src="drag.js"></script>
+</body>
+</html>

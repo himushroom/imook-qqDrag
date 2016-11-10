@@ -1,0 +1,93 @@
+body,
+#state_list,
+li
+{
+    box-sizing: border-box;
+}
+
+#con{
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    width: 200px;
+    box-shadow: 0 0 0 3px #ddd;
+    padding: 10px 20px;
+    border-radius: 5%;
+}
+
+#drag{
+    margin: 10px auto 20px;
+    cursor: pointer;
+}
+
+h3{
+    margin: 0 auto;
+    padding: 5px;
+    width: 100px;
+    text-align: center;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.main{
+    margin: 0 auto 15px;
+}
+
+.main label{
+    font-size: 0.8em;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+footer{
+    position: relative;
+}
+
+button{
+    background: blue;
+    color: #fff;
+}
+
+/* 小三角 */
+#state{
+    float: right;
+    margin:7px 15px 0 0;
+    font-size: 0.9em;
+    color: green;
+    cursor: pointer;
+    height: 15px
+}
+.down{
+    display: inline-block;
+    height: 0px;
+    width: 0;
+    /*border-left: 5px solid transparent;*/
+    border-right: 5px solid green;
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    vertical-align: middle;
+}
+.down~span:not(.on){
+    padding-left: 3px
+}
+#state_list{
+    padding: 0;
+    margin: 0;
+    display: none;
+    position: absolute;
+    top: 4px;
+    right: -4px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 60px;
+    background: #fff;
+}
+li{
+    width: 100%;
+    cursor: pointer;
+    display: inline-block;
+    list-style: none;
+    font-size: 0.9em;
+    margin: 0 auto;
+    padding: 5px 5px 3px;
+    color: green
+}
